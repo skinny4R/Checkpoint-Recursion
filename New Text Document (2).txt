@@ -1,0 +1,28 @@
+// test_if_a_word_is_a_palindrome
+declare
+i,j,k,n,number_to_check : integer;
+
+
+imp
+i = n % 10;
+j = j * 10 + i;
+n = n / 10;
+
+
+begin
+read (number_to_check as n);
+set j = 0;
+set k = n;
+
+while n != 0 do
+    i = n % 10;
+    j = j * 10 + i;
+    n = n / 10;
+end while;
+
+if n == k
+    display n is palindrome;
+else
+    display n is not a palindrome;
+end if
+end

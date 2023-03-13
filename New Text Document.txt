@@ -1,0 +1,24 @@
+// test_if_a_word_is_a_palindrome
+declare
+word_palindrome : string;
+i,j : integer;
+result : boolean;
+
+imp
+for i from 0 to word_palindrome.length-1;
+
+begin
+    j := word_palindrome.length-1;
+    result := true;
+
+    for i from 0 to word_palindrome.length-1
+        if (word_palindrome[i] = word_palindrome[j]);
+    then
+        j := j-1;
+    else
+        result := false;
+    end_if
+end_for
+
+return result;
+end
